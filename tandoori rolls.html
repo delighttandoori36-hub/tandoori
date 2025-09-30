@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Noodles • Premium Menu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --yellow: #ff9b4f;
+      --yellow-deep: #f6a400;
+      --ink: #1c1c1c;
+      --muted: #696969;
+      --bg: #fffaf0;
+      --card: #ffffff;
+    }
+    * { box-sizing: border-box; margin:0; padding:0; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(1200px 600px at 20% -20%, rgba(216, 214, 208, 0.6), transparent 60%),
+        radial-gradient(800px 400px at 120% 10%, rgba(255,213,79,0.35), transparent 40%),
+        var(--bg);
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+    header {
+      background: linear-gradient(135deg, #fff3bf, var(--yellow));
+      padding: 18px 22px;
+      border-radius: 24px;
+      box-shadow: 0 12px 30px rgba(246,185,0,0.25);
+      text-align: center;
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 32px;
+      margin: 0;
+    }
+    .menu-grid {
+      margin-top: 24px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .dish {
+      background: var(--card);
+      border: 1px solid rgba(0,0,0,0.08);
+      border-radius: 16px;
+      padding: 14px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+    .dish:hover {
+      transform: translateY(-4px);
+    }
+    .dish img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 12px;
+    }
+    .dish-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+    .price-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--yellow-deep);
+    }
+    footer {
+      margin-top: 32px;
+      text-align: center;
+      font-size: 13px;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+
+ <div class="container">
+
+ <!-- Candle Delight Pizza -->
+<header><h1>Tandoori Roll</h1></header>
+<div class="menu-grid">
+  <div class="dish"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7TIaFdtluSmnTBP6HHr5hoo6FQxO08svyCg&s" alt="1"><div class="dish-title">Paneer Tikka Roll</div><div class="price-row">₹130/-  </div></div>
+  <div class="dish"><img src="https://i.ytimg.com/vi/ekN2yz0K-CM/sddefault.jpg" alt="2"><div class="dish-title">Veg Seekh Roll</div><div class="price-row">₹110/-  </div></div>
+  <div class="dish"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI3UONvp3PlmQDK0HZKIycSM6wWpRQX91a8A&s" alt="3"><div class="dish-title">Mushroom Roll</div><div class="price-row">₹130/-  </div></div>
+  <div class="dish"><img src="https://i.ytimg.com/vi/F19YKlNrO38/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBAWKZBGGSL1rrk_2aXWaFWBZS49w" alt="4"><div class="dish-title">Malai Chaap Roll</div><div class="price-row">₹120/-  </div></div>
+  <div class="dish"><img src="https://doorkatandoor.com/wp-content/uploads/2022/01/DKT-DKT-SPL-ROLLS-Malai-Paneer-Tikka-Roll.jpg" alt="5"><div class="dish-title">Malai Paneer Roll</div><div class="price-row">₹140/- </div></div>
+ <div class="dish"><img src="https://orders.popskitchen.in/storage/2024/09/image-319.png" alt="6"><div class="dish-title">Soya Chaap Roll</div><div class="price-row">₹100/-  </div></div>
+ <div class="dish"><img src="https://amycaseycooks.com/wp-content/uploads/2016/02/Webp.net-resizeimage-2021-01-30T183612.197.jpg" alt="7"><div class="dish-title">White Papper veg Spring Roll</div><div class="price-row">₹170/-  </div></div>
+ <div class="dish"><img src="https://orders.popskitchen.in/storage/2024/09/1238693919.jpg" alt="7"><div class="dish-title">Chilli Mushroom Roll</div><div class="price-row">₹130/-  </div></div>
+<div class="dish"><img src="https://spicecravings.com/wp-content/uploads/2020/12/Paneer-kathi-Roll-Featured-1.jpg" alt="7"><div class="dish-title">Chilli Paneer Roll</div><div class="price-row">₹150/-  </div></div>
+<div class="menu-grid">
+
+  <div class="dish">
+    <img src="https://mis.rezolpos.in/images/product/Seekh%20Kebab%20Roll%20Listing%20500x500.png" alt="Chicken Seekh Roll">
+    <div class="dish-title">Chicken Seekh Roll</div>
+    <div class="price-row">₹120 /-</div>
+  </div>
+
+  <div class="dish">
+    <img src="https://bakewithzoha.com/wp-content/uploads/2024/03/chicken-tikka-paratha-rolls-featured.jpg" alt="Chicken Tikka Roll">
+    <div class="dish-title">Chicken Tikka Roll</div>
+    <div class="price-row">₹150 /-</div>
+  </div>
+
+  <div class="dish">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG1RogcxjUTsQSxFs47GJuWQZK50KDlso7sQ&s" alt="Malai Ch. Tikka Roll">
+    <div class="dish-title">Malai Ch. Tikka Roll</div>
+    <div class="price-row">₹160 /-</div>
+  </div>
+
+  <div class="dish">
+    <img src="https://i.ytimg.com/vi/Ru_PP9FsbV8/maxresdefault.jpg" alt="Garlic Ch. Tikka Roll">
+    <div class="dish-title">Garlic Ch. Tikka Roll</div>
+    <div class="price-row">₹160 /-</div>
+  </div>
+
+  <div class="dish">
+    <img src="https://images.archanaskitchen.com/images/recipes/snack-recipes/roll-recipes-wraps-frankies/Hariyali_Chicken_Tikka_Wrap_Recipe_9400_6ca033682a.jpg" alt="Haryali Ch. Tikka Roll">
+    <div class="dish-title">Haryali Ch. Tikka Roll</div>
+    <div class="price-row">₹160 /-</div>
+  </div>
+
+  <div class="dish">
+    <img src="https://kebabistaan.in/wp-content/uploads/2019/08/chicken-roll.jpg" alt="Burra Tikka Roll">
+    <div class="dish-title">Burra Tikka Roll</div>
+    <div class="price-row">₹160 /-</div>
+  </div>
+
+  <div class="dish">
+    <img src="https://i.ytimg.com/vi/hEQQGxS-ynY/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDS9USsKg3YdT-6jJ3WNFNhl4-mWw" alt="Chicken Spring Roll">
+    <div class="dish-title">Chicken Spring Roll</div>
+    <div class="price-row">₹170 /-</div>
+  </div>
+
+  <div class="dish">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6wSY14Sx9QcPbmz1WYU2ImhK-4fT4TpLRTA&s" alt="White Papper Chicken Spring Roll">
+    <div class="dish-title">White Papper Chicken Spring Roll</div>
+    <div class="price-row">₹220 /-</div>
+  </div>
+
+  <div class="dish">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrOu0b0bfdTK2nOPJQKMsOK-TPymtDv1nUZQ&s" alt="Chilli Chicken Roll">
+    <div class="dish-title">Chilli Chicken Roll</div>
+    <div class="price-row">₹180 /-</div>
+  </div>
+
+</div>
+
+</div>
+
+
+  </div>
+</div>
+
+<footer>© <span id="year"></span> Premium Menu</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

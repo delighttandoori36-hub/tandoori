@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Momos • Premium Menu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --yellow: #ff9b4f;
+      --yellow-deep: #f6a400;
+      --ink: #1c1c1c;
+      --muted: #696969;
+      --bg: #fffaf0;
+      --card: #ffffff;
+    }
+    * { box-sizing: border-box; margin:0; padding:0; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(1200px 600px at 20% -20%, rgba(216, 214, 208, 0.6), transparent 60%),
+        radial-gradient(800px 400px at 120% 10%, rgba(255,213,79,0.35), transparent 40%),
+        var(--bg);
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+    header {
+      background: linear-gradient(135deg, #fff3bf, var(--yellow));
+      padding: 18px 22px;
+      border-radius: 24px;
+      box-shadow: 0 12px 30px rgba(246,185,0,0.25);
+      text-align: center;
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 32px;
+      margin: 0;
+    }
+    .menu-grid {
+      margin-top: 24px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .dish {
+      background: var(--card);
+      border: 1px solid rgba(0,0,0,0.08);
+      border-radius: 16px;
+      padding: 14px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+    .dish:hover {
+      transform: translateY(-4px);
+    }
+    .dish img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 12px;
+    }
+    .dish-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+    .price-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--yellow-deep);
+    }
+    footer {
+      margin-top: 32px;
+      text-align: center;
+      font-size: 13px;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+  <header><h1>Chowmein</h1></header>
+<div class="menu-grid">
+
+  <div class="dish">
+    <img src="https://www.cookwithmanali.com/wp-content/uploads/2024/01/Veg-Chowmein.jpg" alt="Veg Chowmein">
+    <div class="dish-title">Veg Chowmein</div>
+    <div class="price-row">Half: ₹40 /- | Full: ₹70 /-</div>
+  </div>
+
+  <div class="dish">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbdmka3wHhCPigqcokfHfNqQx1RrAKdNjT9Q&s" alt="Hakka Chowmein">
+    <div class="dish-title">Hakka Chowmein</div>
+    <div class="price-row">Half: ₹70 /- | Full: ₹120 /-</div>
+  </div>
+
+  <div class="dish">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCOZAbUNKyLHqRgDxIIc51r9noFQ2cp7ld2g&s" alt="Singapuri Chowmein">
+    <div class="dish-title">Singapuri Chowmein</div>
+    <div class="price-row">Half: ₹80 /- | Full: ₹130 /-</div>
+  </div>
+
+  <div class="dish">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ-CtNglY2Pu6kgFaf47k8avxAxili0lvIlg&s" alt="Paneer Chowmein">
+    <div class="dish-title">Paneer Chowmein</div>
+    <div class="price-row">Half: ₹80 /- | Full: ₹130 /-</div>
+  </div>
+
+  <div class="dish">
+    <img src="https://www.chefkunalkapur.com/wp-content/uploads/2021/12/Veg-Chowmein-1300x867.jpg?v=1638771610" alt="Chilli Garlic Chowmein">
+    <div class="dish-title">Chilli Garlic Chowmein</div>
+    <div class="price-row">Half: ₹60 /- | Full: ₹100 /-</div>
+  </div>
+
+  <div class="dish">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHAMC0Z2G27sK1SKFD1ex2-qqmOW7WLm7kCQ&s" alt="Chicken Chowmein">
+    <div class="dish-title">Chicken Chowmein</div>
+    <div class="price-row">Half: ₹80 /- | Full: ₹140 /-</div>
+  </div>
+
+  <div class="dish">
+    <img src="https://i.ytimg.com/vi/XYmeKMRahuU/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBtaKZEeQ5Ddu_Du9wUkQGRNa-ctg" alt="Egg Chowmein">
+    <div class="dish-title">Egg Chowmein</div>
+    <div class="price-row">Half: ₹70 /- | Full: ₹120 /-</div>
+  </div>
+
+</div>
+
+
+  </div>
+</div>
+
+<footer>© <span id="year"></span> Premium Menu</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

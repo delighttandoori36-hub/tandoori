@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Noodles • Premium Menu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --yellow: #ff9b4f;
+      --yellow-deep: #f6a400;
+      --ink: #1c1c1c;
+      --muted: #696969;
+      --bg: #fffaf0;
+      --card: #ffffff;
+    }
+    * { box-sizing: border-box; margin:0; padding:0; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(1200px 600px at 20% -20%, rgba(216, 214, 208, 0.6), transparent 60%),
+        radial-gradient(800px 400px at 120% 10%, rgba(255,213,79,0.35), transparent 40%),
+        var(--bg);
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+    header {
+      background: linear-gradient(135deg, #fff3bf, var(--yellow));
+      padding: 18px 22px;
+      border-radius: 24px;
+      box-shadow: 0 12px 30px rgba(246,185,0,0.25);
+      text-align: center;
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 32px;
+      margin: 0;
+    }
+    .menu-grid {
+      margin-top: 24px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .dish {
+      background: var(--card);
+      border: 1px solid rgba(0,0,0,0.08);
+      border-radius: 16px;
+      padding: 14px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+    .dish:hover {
+      transform: translateY(-4px);
+    }
+    .dish img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 12px;
+    }
+    .dish-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+    .price-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--yellow-deep);
+    }
+    footer {
+      margin-top: 32px;
+      text-align: center;
+      font-size: 13px;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+
+ <div class="container">
+
+ <!-- Candle Delight Pizza -->
+<header><h1>Tandoori Starters</h1></header>
+<div class="menu-grid">
+
+  <div class="dish">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ2WY2YmIJtXrpmDToEHwJIOAcyBefjpFwXg&s" alt="Paneer Tikka">
+    <div class="dish-title">Paneer Tikka</div>
+    <div class="price-row">Half: ₹120 /- | Full: ₹200 /-</div>
+  </div>
+
+  <div class="dish">
+    <img src="https://www.vegrecipesofindia.com/wp-content/uploads/2017/11/malai-paneer-tikka-recipe-1.jpg" alt="Malai Paneer Tikka">
+    <div class="dish-title">Malai Paneer Tikka</div>
+    <div class="price-row">Half: ₹140 /- | Full: ₹220 /-</div>
+  </div>
+
+  <div class="dish">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ4vIjJUwy6Y1GseRwa1sFBasFXyOfUXeMAg&s" alt="Garlic Paneer Tikka">
+    <div class="dish-title">Garlic Paneer Tikka</div>
+    <div class="price-row">Half: ₹140 /- | Full: ₹220 /-</div>
+  </div>
+
+  <div class="dish">
+    <img src="https://www.cookwithmanali.com/wp-content/uploads/2021/06/Hariyali-Paneer-Tikka-500x500.jpg" alt="Haryali Paneer Tikka">
+    <div class="dish-title">Haryali Paneer Tikka</div>
+    <div class="price-row">Half: ₹140 /- | Full: ₹220 /-</div>
+  </div>
+
+  <div class="dish">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvqbWNqHRLducSl2xo1cVxZ0hIz3THSafshg&s" alt="Bhatti Chaap">
+    <div class="dish-title">Bhatti Chaap</div>
+    <div class="price-row">Half: ₹150 /- | Full: ₹250 /-</div>
+  </div>
+
+  <div class="dish">
+    <img src="https://www.funfoodfrolic.com/wp-content/uploads/2022/08/Soya-Chaap-Blog.jpg" alt="Soya Chaap">
+    <div class="dish-title">Soya Chaap</div>
+    <div class="price-row">Half: ₹130 /- | Full: ₹230 /-</div>
+  </div>
+
+  <div class="dish">
+    <img src="https://www.temptingtreat.com/wp-content/uploads/2022/02/DSC_1130-copy.jpg" alt="Malai Chaap">
+    <div class="dish-title">Malai Chaap</div>
+    <div class="price-row">Half: ₹150 /- | Full: ₹250 /-</div>
+  </div>
+
+  <div class="dish">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_np0D_CV_uyvAgSJWAngBcGB0dXqf7vsCzw&s" alt="Garlic Chaap">
+    <div class="dish-title">Garlic Chaap</div>
+    <div class="price-row">Half: ₹150 /- | Full: ₹250 /-</div>
+  </div>
+
+  <div class="dish">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCUL6LNQQIC8zTwhzZWsKCaP-8PSae6iU2vw&s" alt="Haryali Chaap">
+    <div class="dish-title">Haryali Chaap</div>
+    <div class="price-row">Half: ₹150 /- | Full: ₹250 /-</div>
+  </div>
+
+  <div class="dish">
+    <img src="https://pipingpotcurry.com/wp-content/uploads/2021/03/Tandoori-Aloo-Tikka-Piping-Pot-Curry-1-3.jpg" alt="Tandoori Aloo">
+    <div class="dish-title">Tandoori Aloo</div>
+    <div class="price-row">Half: ₹170 /- | Full: ₹270 /-</div>
+  </div>
+
+  <div class="dish">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHcTWVyu-Ny_pIOrxvWinvmOuxsdo-16JtSw&s" alt="Tandoori Mushroom">
+    <div class="dish-title">Tandoori Mushroom</div>
+    <div class="price-row">Half: ₹160 /- | Full: ₹250 /-</div>
+  </div>
+
+  <div class="dish">
+    <img src="https://cdn.uengage.io/uploads/53677/image-871254-1723274610.png" alt="Haryali Seekh Kabab">
+    <div class="dish-title">Haryali Seekh Kabab</div>
+    <div class="price-row">Half: ₹160 /- | Full: ₹250 /-</div>
+  </div>
+
+  <div class="dish">
+    <img src="https://orders.popskitchen.in/storage/2024/09/image-369.png" alt="Veg Platter">
+    <div class="dish-title">Veg Platter</div>
+    <div class="price-row">Half: ₹300 /- | Full: ₹450 /-</div>
+  </div>
+
+  <div class="dish">
+    <img src="https://tadkatrails.com/wp-content/uploads/2024/12/TANDOORI-CHAAP.jpg" alt="Tilli Chaap">
+    <div class="dish-title">Tilli Chaap</div>
+    <div class="price-row">Half: ₹250 /- | Full: ₹380 /-</div>
+  </div>
+
+  <div class="dish">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR35oq0_C7naIyXfKCaE4hp7N6pxZa0qHwLBA&s" alt="Lemon Chaap">
+    <div class="dish-title">Lemon Chaap</div>
+    <div class="price-row">Half: ₹350 /- | Full: ₹520 /-</div>
+
+    <div class="menu-grid">
+
+  <div class="dish">
+    <img src="https://static01.nyt.com/images/2024/05/16/multimedia/fs-tandoori-chicken-hmjq/fs-tandoori-chicken-hmjq-videoSixteenByNineJumbo1600.jpg" alt="Tandoori Chicken">
+    <div class="dish-title">Tandoori Chicken</div>
+    <div class="price-row">Half: ₹220 /- | Full: ₹370 /-</div>
+  </div>
+
+  <div class="dish">
+    <img src="https://5.imimg.com/data5/SELLER/Default/2024/9/449761410/AA/TV/CP/230584086/afghani-chicken-half.jpg" alt="Afgani Chicken Spl">
+    <div class="dish-title">Afgani Chicken Spl</div>
+    <div class="price-row">Half: ₹230 /- | Full: ₹380 /-</div>
+  </div>
+
+  <div class="dish">
+    <img src="https://ikneadtoeat.com/wp-content/uploads/2021/10/hariyali-chicken-recipe-2.jpg" alt="Haryali Chicken">
+    <div class="dish-title">Haryali Chicken</div>
+    <div class="price-row">Half: ₹230 /- | Full: ₹380 /-</div>
+  </div>
+
+  <div class="dish">
+    <img src="https://i.ytimg.com/vi/jNtixbgASk8/sddefault.jpg" alt="Burra Chicken Spl">
+    <div class="dish-title">Burra Chicken Spl</div>
+    <div class="price-row">Half: ₹230 /- | Full: ₹380 /-</div>
+  </div>
+
+  <div class="dish">
+    <img src="https://static01.nyt.com/images/2019/07/24/dining/19apperex1/19apperex1-master768.jpg" alt="Bhatti Chicken">
+    <div class="dish-title">Bhatti Chicken</div>
+    <div class="price-row">Half: ₹230 /- | Full: ₹380 /-</div>
+  </div>
+
+  <div class="dish">
+    <img src="https://www.thetakeiteasychef.com/wp-content/uploads/2017/01/Garlic-Chicken-Thumbnail.jpg" alt="Garlic Chicken">
+    <div class="dish-title">Garlic Chicken</div>
+    <div class="price-row">Half: ₹230 /- | Full: ₹360 /-</div>
+  </div>
+
+  <div class="dish">
+    <img src="https://sinfullyspicy.com/wp-content/uploads/2014/03/1200-by-1200-images-2.jpg" alt="Chicken Tikka">
+    <div class="dish-title">Chicken Tikka</div>
+    <div class="price-row">Half: ₹160 /- | Full: ₹260 /-</div>
+  </div>
+
+  <div class="dish">
+    <img src="https://j6e2i8c9.delivery.rocketcdn.me/wp-content/uploads/2017/07/Murgh-Malai-tikka-3.jpg" alt="Chicken Malai Tikka">
+    <div class="dish-title">Chicken Malai Tikka</div>
+    <div class="price-row">Half: ₹170 /- | Full: ₹270 /-</div>
+  </div>
+
+  <div class="dish">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhDqM_XtNp2ehY5t4KD2uKf1SFTm6awVxZeg&s" alt="Chicken Achari Tikka">
+    <div class="dish-title">Chicken Achari Tikka</div>
+    <div class="price-row">Half: ₹170 /- | Full: ₹270 /-</div>
+  </div>
+
+  <div class="dish">
+    <img src="https://www.whiskaffair.com/wp-content/uploads/2020/06/Chicken-Tikka-2-3.jpg" alt="Chicken Garlic Tikka">
+    <div class="dish-title">Chicken Garlic Tikka</div>
+    <div class="price-row">Half: ₹170 /- | Full: ₹270 /-</div>
+  </div>
+
+  <div class="dish">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGJSi0TVGyKNbWge6pvAsaRkPf3QvTVxn8JA&s" alt="Chicken Kali Mirch Tikka">
+    <div class="dish-title">Chicken Kali Mirch Tikka</div>
+    <div class="price-row">Half: ₹170 /- | Full: ₹270 /-</div>
+  </div>
+
+  <div class="dish">
+    <img src="https://www.scratchingcanvas.com/wp-content/uploads/2021/05/Chicken-Reshmi-Kabab.1i.jpg" alt="Chicken Reshmi Kabab">
+    <div class="dish-title">Chicken Reshmi Kabab</div>
+    <div class="price-row">Half: ₹230 /- | Full: ₹370 /-</div>
+  </div>
+
+  <div class="dish">
+    <img src="https://images.archanaskitchen.com/images/recipes/indian/main-course/indian-non-veg-recipes/chicken-recipes/Hariyali_Chicken_Tikka_Recipe_9373_65802734e4.jpg" alt="Chicken Haryali Tikka">
+    <div class="dish-title">Chicken Haryali Tikka</div>
+    <div class="price-row">Half: ₹170 /- | Full: ₹270 /-</div>
+  </div>
+
+  <div class="dish">
+    <img src="https://c.ndtvimg.com/2024-02/ddjcos7g_lemon-chicken-tikka_625x300_05_February_24.jpg" alt="Chicken Lemon Tikka">
+    <div class="dish-title">Chicken Lemon Tikka</div>
+    <div class="price-row">Half: ₹200 /- | Full: ₹300 /-</div>
+  </div>
+
+  <div class="dish">
+    <img src="https://i.ytimg.com/vi/jNtixbgASk8/sddefault.jpg" alt="Chicken Burra Tikka">
+    <div class="dish-title">Chicken Burra Tikka</div>
+    <div class="price-row">Half: ₹200 /- | Full: ₹300 /-</div>
+  </div>
+
+  <div class="dish">
+    <img src="https://www.ndtv.com/cooks/images/chicken.seekh.jpg" alt="Chicken Seekh Kabab">
+    <div class="dish-title">Chicken Seekh Kabab</div>
+    <div class="price-row"> ₹220 /-</div>
+  </div>
+
+  <div class="dish">
+    <img src="https://i.ytimg.com/vi/1Kxi-dtMsIU/hqdefault.jpg" alt="Tilli Chicken">
+    <div class="dish-title">Tilli Chicken</div>
+    <div class="price-row">Half: ₹200 /- | Full: ₹300 /-</div>
+  </div>
+
+  <div class="dish">
+    <img src="https://palatesdesire.com/wp-content/uploads/2022/07/Tangdi-kebab-recipe@palates-desire-1.jpg" alt="Tandoori Tangdi">
+    <div class="dish-title">Tandoori Tangdi</div>
+    <div class="price-row">Half: ₹200 /- | Full: ₹350 /-</div>
+  </div>
+
+  <div class="dish">
+    <img src="https://i.ytimg.com/vi/vRjVtdBRxwY/maxresdefault.jpg" alt="Diet Tikka">
+    <div class="dish-title">Diet Tikka</div>
+    <div class="price-row">Half: ₹200 /- | Full: ₹300 /-</div>
+  </div>
+
+  <div class="dish">
+    <img src="https://sankrantigroup.com/wp-content/uploads/2025/03/16.jpg" alt="Assorted Non Veg Platter">
+    <div class="dish-title">Assorted Non Veg Platter</div>
+    <div class="price-row">Half: ₹390 /- | Full: ₹690 /-</div>
+  </div>
+
+  <div class="dish">
+    <img src="https://spicecravings.com/wp-content/uploads/2021/03/Chicken-Seekh-Kebab-Featured-1.jpg" alt="Special Chicken Seekh Kabab">
+    <div class="dish-title">Special Chicken Seekh Kabab</div>
+    <div class="price-row">Half: ₹220 /- | Full: ₹380 /-</div>
+  </div>
+
+</div>
+
+  </div>
+
+</div>
+
+
+
+  </div>
+</div>
+
+<footer>© <span id="year"></span> Premium Menu</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

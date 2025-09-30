@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Momos • Premium Menu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --yellow: #ff9b4f;
+      --yellow-deep: #f6a400;
+      --ink: #1c1c1c;
+      --muted: #696969;
+      --bg: #fffaf0;
+      --card: #ffffff;
+    }
+    * { box-sizing: border-box; margin:0; padding:0; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(1200px 600px at 20% -20%, rgba(216, 214, 208, 0.6), transparent 60%),
+        radial-gradient(800px 400px at 120% 10%, rgba(255,213,79,0.35), transparent 40%),
+        var(--bg);
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+    header {
+      background: linear-gradient(135deg, #fff3bf, var(--yellow));
+      padding: 18px 22px;
+      border-radius: 24px;
+      box-shadow: 0 12px 30px rgba(246,185,0,0.25);
+      text-align: center;
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 32px;
+      margin: 0;
+    }
+    .menu-grid {
+      margin-top: 24px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .dish {
+      background: var(--card);
+      border: 1px solid rgba(0,0,0,0.08);
+      border-radius: 16px;
+      padding: 14px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+    .dish:hover {
+      transform: translateY(-4px);
+    }
+    .dish img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 12px;
+    }
+    .dish-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+    .price-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--yellow-deep);
+    }
+    footer {
+      margin-top: 32px;
+      text-align: center;
+      font-size: 13px;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+  <header><h1>Breads</h1></header>
+  <div class="menu-grid">
+
+    <div class="dish">
+      <img src="https://static.toiimg.com/photo/75542650.cms" alt="Tandoori Roti">
+      <div class="dish-title">Tandoori Roti</div>
+      <div class="price-row"><span>₹8/-</span></div>
+    </div>
+
+    <div class="dish">
+      <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2023/09/tandoori-roti-recipe.jpg" alt="Tandoori Roti">
+      <div class="dish-title">Butter Roti</div>
+      <div class="price-row"><span>₹10/-</span></div>
+    </div>
+
+    <div class="dish">
+      <img src="https://pabulum.co.in/wp-content/uploads/2024/08/Rumali-Roti.jpg" alt="Tandoori Roti">
+      <div class="dish-title">Rumali Roti</div>
+      <div class="price-row"><span>₹10/-</span></div>
+    </div>
+
+    <div class="dish">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwv6_HtPeRkP-H1aF5QbRBI2FZJBGEuXRjPg&s" alt="Tandoori Roti">
+      <div class="dish-title">Garlic naan</div>
+      <div class="price-row"><span>₹45/-</span></div>
+    </div>
+
+   <div class="dish">
+      <img src="https://www.mygingergarlickitchen.com/wp-content/uploads/2025/05/pudina-paratha-recipe-mint-paratha-11.jpg" alt="Tandoori Roti">
+      <div class="dish-title">Pudhina Paratha</div>
+      <div class="price-row"><span>₹40/-</span></div>
+    </div>
+
+    <div class="dish">
+      <img src="https://c.ndtvimg.com/2024-01/7n07gvq8_paratha_625x300_15_January_24.jpg?im=FaceCrop,algorithm=dnn,width=1200,height=738" alt="Tandoori Roti">
+      <div class="dish-title">Mirch Paratha</div>
+      <div class="price-row"><span>₹40/-</span></div>
+    </div>
+
+<div class="dish">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrSDK4UaWhTXy-MsSZF-QBunAieMQxcovNog&s" alt="Tandoori Roti">
+      <div class="dish-title">Stuffed Paratha</div>
+      <div class="price-row"><span>₹100/-</span></div>
+    </div>
+
+    <div class="dish">
+      <img src="https://i.ytimg.com/vi/Ovyio9kmZSk/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCGT6l8wL8eF1-WO2T-TkQJQjjXGA" alt="Tandoori Roti">
+      <div class="dish-title">Garlic Lachha Paratha</div>
+      <div class="price-row"><span>₹40/-</span></div>
+    </div>
+
+    <div class="dish">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC31AwuT3x3kDa4WOuJl8kV4LZ281tzYMeRw&s" alt="Tandoori Roti">
+      <div class="dish-title">Keema Paratha</div>
+      <div class="price-row"><span>₹100/-</span></div>
+    </div>
+
+    <div class="dish">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwx8kkjHxHkEvmywspqWTqeVA2k0p8Wcye4w&s" alt="Missi Roti">
+      <div class="dish-title">Missi Roti</div>
+      <div class="price-row"><span>₹40/-</span></div>
+    </div>
+
+    <div class="dish">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8JCQyqHRMsBXMJWqYrKnRJGUxm39MrRTjVQ&s" alt="Laccha Paratha">
+      <div class="dish-title">Laccha Paratha</div>
+      <div class="price-row"><span>₹30/-</span></div>
+    </div>
+
+    <div class="dish">
+      <img src="https://www.vegrecipesofindia.com/wp-content/uploads/2025/05/naan-3-500x500.jpg" alt="Plain Naan">
+      <div class="dish-title">Plain Naan</div>
+      <div class="price-row"><span>₹30/-</span></div>
+    </div>
+
+    <div class="dish">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTu0yBjOvU4BwUI5r6tJhYU5CQlAYOrqHphIg&s" alt="Butter Naan">
+      <div class="dish-title">Butter Naan</div>
+      <div class="price-row"><span>₹40/-</span></div>
+    </div>
+
+    
+
+    <div class="dish">
+      <img src="https://i0.wp.com/www.blissofcooking.com/wp-content/uploads/2017/07/Aloo-Pyaz-Ka-Paratha-MOP.jpg?resize=740%2C493&ssl=1" alt="Aaloo Pyaz Paratha">
+      <div class="dish-title">Aloo Paratha</div>
+      <div class="price-row"><span>₹70/-</span></div>
+    </div>
+
+    <div class="dish">
+      <img src="https://media.chefdehome.com/750/0/0/aloo-paratha/best-aloo-paratha.jpg" alt="Paneer Pyaz Paratha">
+      <div class="dish-title">Paneer Paratha</div>
+      <div class="price-row"><span>₹90/-</span></div>
+    </div>
+    
+
+  </div>
+</div>
+
+
+
+  </div>
+</div>
+
+<footer>© <span id="year"></span> Premium Menu</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

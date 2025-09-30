@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Noodles • Premium Menu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --yellow: #ff9b4f;
+      --yellow-deep: #f6a400;
+      --ink: #1c1c1c;
+      --muted: #696969;
+      --bg: #fffaf0;
+      --card: #ffffff;
+    }
+    * { box-sizing: border-box; margin:0; padding:0; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(1200px 600px at 20% -20%, rgba(216, 214, 208, 0.6), transparent 60%),
+        radial-gradient(800px 400px at 120% 10%, rgba(255,213,79,0.35), transparent 40%),
+        var(--bg);
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+    header {
+      background: linear-gradient(135deg, #fff3bf, var(--yellow));
+      padding: 18px 22px;
+      border-radius: 24px;
+      box-shadow: 0 12px 30px rgba(246,185,0,0.25);
+      text-align: center;
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 32px;
+      margin: 0;
+    }
+    .menu-grid {
+      margin-top: 24px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .dish {
+      background: var(--card);
+      border: 1px solid rgba(0,0,0,0.08);
+      border-radius: 16px;
+      padding: 14px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+    .dish:hover {
+      transform: translateY(-4px);
+    }
+    .dish img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 12px;
+    }
+    .dish-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+    .price-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--yellow-deep);
+    }
+    footer {
+      margin-top: 32px;
+      text-align: center;
+      font-size: 13px;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+
+ <div class="container">
+
+ <!-- Candle Delight Pizza -->
+<header><h1>Chinese</h1></header>
+<div class="menu-grid">
+
+  <div class="dish">
+    <img src="https://1.bp.blogspot.com/-_QHI8lgj5n8/XuJ7chjrXYI/AAAAAAAAKQ0/tQuNDYLDYQ4YIhji0IVat-y7iLuutnVGwCLcBGAsYHQ/s1600/Chilli%2BMushroom%2BDry.JPG" alt="Chilly Mushroom">
+    <div class="dish-title">Chilly Mushroom</div>
+    <div class="price-row">Half: ₹150 /- | Full: ₹250 /-</div>
+  </div>
+
+  <div class="dish">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLL7ELazVbZPsu6A-qDZrMCtq9h6ZR8iMGMA&s" alt="Chilly Paneer">
+    <div class="dish-title">Chilly Paneer</div>
+    <div class="price-row">Half: ₹150 /- | Full: ₹250 /-</div>
+  </div>
+
+  <div class="dish">
+    <img src="https://cluecoded.com/wp-content/uploads/2024/09/Chilli-chaap.webp" alt="Chilly Chaap">
+    <div class="dish-title">Chilly Chaap</div>
+    <div class="price-row">Half: ₹130 /- | Full: ₹230 /-</div>
+  </div>
+
+  <div class="dish">
+    <img src="https://5.imimg.com/data5/FG/XI/GLADMIN-28464664/chilli-potato-500x500.png" alt="Chilly Potato">
+    <div class="dish-title">Chilly Potato</div>
+    <div class="price-row">Half: ₹70 /- | Full: ₹100 /-</div>
+  </div>
+
+  <div class="dish">
+    <img src="https://rakskitchen.net/wp-content/uploads/2022/07/honey-chilli-500x500.jpg" alt="Honey Chilly Potato">
+    <div class="dish-title">Honey Chilly Potato</div>
+    <div class="price-row">Half: ₹90 /- | Full: ₹140 /-</div>
+  </div>
+
+  <div class="dish">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdBkE-0bn6hGO7C4PrJDU13LOal8kDhNBQdQ&s" alt="Veg Manchurian Dry">
+    <div class="dish-title">Veg Manchurian Dry</div>
+    <div class="price-row">Half: ₹110 /- | Full: ₹180 /-</div>
+  </div>
+
+  <div class="dish">
+    <img src="https://i.ytimg.com/vi/lHU74Dmrffc/maxresdefault.jpg" alt="Crispy Veg Salt Pepper">
+    <div class="dish-title">Crispy Veg Salt Pepper</div>
+    <div class="price-row">Half: ₹150 /- | Full: ₹250 /-</div>
+  </div>
+
+  <div class="dish">
+    <img src="https://coox-new.s3.ap-south-1.amazonaws.com/watermarked/images/booking/9384/booking_img051e7d5c-05fe-431a-9c23-20605b9e79c3.jpg" alt="Crispy Veg Salt Pepper">
+    <div class="dish-title">Veg Salt And Pepper</div>
+    <div class="price-row">Half: ₹150 /- | Full: ₹250 /-</div>
+  </div>
+
+  <div class="dish">
+    <img src="https://pupswithchopsticks.com/wp-content/uploads/chilli-chicken-thumbnail.jpg" alt="Chilly Chicken">
+    <div class="dish-title">Chilly Chicken</div>
+    <div class="price-row">Half: ₹190 /- | Full: ₹290 /-</div>
+  </div>
+
+  <div class="dish">
+    <img src="https://somethingiscooking.com/wp-content/uploads/2021/04/Drums-of-Heaven-featured.jpg" alt="Drums of Heaven">
+    <div class="dish-title">Drums of Heaven</div>
+    <div class="price-row">Half: ₹250 /- | Full: ₹400 /-</div>
+  </div>
+
+  <div class="dish">
+    <img src="https://muchbutter.com/wp-content/uploads/2023/06/chicken-honey-chili-7.jpg" alt="Honey Chilly Chicken">
+    <div class="dish-title">Honey Chilly Chicken</div>
+    <div class="price-row">Half: ₹200 /- | Full: ₹300 /-</div>
+  </div>
+
+  <div class="dish">
+    <img src="https://www.licious.in/blog/wp-content/uploads/2020/12/Chilli-Fish.jpg" alt="Chilly Fish">
+    <div class="dish-title">Chilly Fish</div>
+    <div class="price-row">Half: ₹250 /- | Full: ₹350 /-</div>
+  </div>
+
+  <div class="dish">
+    <img src="https://pupswithchopsticks.com/wp-content/uploads/chicken-manchurian-tnnew.webp" alt="Chicken Manchurian">
+    <div class="dish-title">Chicken Manchurian</div>
+    <div class="price-row">Half: ₹200 /- | Full: ₹300 /-</div>
+  </div>
+
+  <div class="dish">
+    <img src="https://www.yummytummyaarthi.com/wp-content/uploads/2021/11/chicken-lollipop-1-500x500.jpeg" alt="Chicken Lollipop">
+    <div class="dish-title">Chicken Lollipop</div>
+    <div class="price-row">Half: ₹200 /- | Full: ₹350 /-</div>
+  </div>
+
+  <div class="dish">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYo6yFEOHDhik-z1xWNXOhlf1AZuqnStMftw&s" alt="Chicken Salt and Pepper">
+    <div class="dish-title">Chicken Salt and Pepper</div>
+    <div class="price-row">Half: ₹250 /- | Full: ₹400 /-</div>
+  </div>
+
+</div>
+</div>
+
+
+
+  </div>
+</div>
+
+<footer>© <span id="year"></span> Premium Menu</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tandoori Delight - Premium Dining</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom animations for fade-in and translate */
+    .fade-in-up {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .fade-in-up.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    /* Scroll behavior smooth */
+    html { scroll-behavior: smooth; }
+
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1.5rem;
+      padding: 1.5rem;
+    }
+    .category-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 1rem;
+      box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
+      transition: transform 0.5s, box-shadow 0.5s;
+    }
+    .category-card:hover {
+      transform: translateY(-8px) scale(1.05);
+      box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25), 0 10px 10px -5px rgba(0,0,0,0.1);
+    }
+    .category-card img {
+      display: block;
+      width: 100%;
+      height: 12rem;
+      object-fit: cover;
+      transition: transform 0.7s;
+    }
+    .category-card:hover img { transform: scale(1.10); }
+    .badge {
+      position: absolute;
+      top: 0.75rem;
+      right: 0.75rem;
+      background-color: #f59e0b;
+      color: black;
+      font-weight: 600;
+      font-size: 0.875rem;
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px;
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+    }
+    .category-title {
+      padding: 1.5rem;
+      font-size: 1.125rem;
+      font-weight: bold;
+      color: #1f2937;
+      text-align: center;
+      transition: color 0.3s;
+    }
+    .category-card:hover .category-title { color: #f59e0b; }
+  </style>
+</head>
+<body class="min-h-screen bg-white font-sans">
+
+<!-- Navigation -->
+<header id="header" class="fixed top-0 w-full z-50 transform transition-transform duration-300 bg-transparent">
+  <div class="max-w-7xl mx-auto px-6 py-3">
+    <div class="flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-16 h-16 rounded-full overflow-hidden bg-white shadow-lg ring-2 ring-amber-400/30">
+          <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSgWqLieYg7UI1RIOygWJ_m73y57OgXyyXGAwJvlvt7Q9YPQPgY" alt="Tandoori Delight Logo" class="w-full h-full object-cover"/>
+        </div>
+        <div>
+          <span class="text-xl font-bold js-header-color text-white">Tandoori Delight</span>
+          <div class="text-xs js-header-color text-white/90">Premium Dining</div>
+        </div>
+      </div>
+      <div class="flex items-center gap-3">
+        <a href="tel:+919582958222" id="call-now" class="hidden md:inline-flex bg-amber-500 hover:bg-amber-600 text-black font-semibold px-5 py-2 rounded-full items-center gap-2">
+          Call Now
+        </a>
+        <div class="relative">
+          <button id="more-btn" aria-haspopup="true" aria-expanded="false" class="p-2 rounded-full hover:bg-gray-100 text-black">...</button>
+          <div id="more-dropdown" class="hidden absolute right-0 mt-2 w-44 bg-white/95 backdrop-blur-sm shadow-lg rounded-xl border border-gray-100 z-50">
+            <a href="#menu" class="block px-4 py-2 hover:bg-gray-100">Menu</a>
+            <a href="#facilities" class="block px-4 py-2 hover:bg-gray-100">Facilities</a>
+            <a href="contact.html" class="block px-4 py-2 hover:bg-gray-100">Contact</a>
+            <div class="px-4 py-2 border-t border-gray-100">
+              <a href="tel:+919582958222" class="flex items-center gap-2 text-amber-600 font-semibold">Call Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Hero Section -->
+<section class="relative h-screen flex items-center justify-center overflow-hidden pt-20">
+  <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="background-image: url('https://www.nxtidea.com/wp-content/uploads/2022/03/Impulse-Restro-21.jpg');">
+    <div class="absolute inset-0 bg-black/60"></div>
+  </div>
+  <div class="relative z-10 text-center text-white px-6 max-w-4xl">
+    <div class="inline-flex items-center gap-2 bg-amber-500/20 backdrop-blur-sm px-4 py-2 rounded-full border border-amber-400/30 mb-6">
+      <span class="text-amber-200 font-medium">Premium Dining Experience</span>
+    </div>
+    <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+      Welcome to <span class="block text-amber-400 font-serif italic">Tandoori Delight</span>
+    </h1>
+    <p class="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl mx-auto leading-relaxed">
+      Enjoy premium dining with delicious flavors, crafted with love, and served in a warm family-friendly environment.
+    </p>
+   <div class="flex flex-col sm:flex-row gap-4 justify-center">
+  <!-- Explore Menu button -->
+  <!-- Explore Menu button -->
+<a href="#menu" id="explore-menu-btn" class="bg-amber-500 hover:bg-amber-600 text-black font-semibold px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105 text-center">
+  Explore Menu
+</a>
+
+
+  <!-- Our Facilities button -->
+  <a href="#facilities" id="our-facilities-btn" class="border-2 border-white/30 text-white hover:bg-white/10 backdrop-blur-sm px-8 py-3 rounded-full transition-all duration-300 text-center">
+    Our Facilities
+  </a>
+</div>
+
+
+</section>
+
+
+<!-- Menu Categories (2 per row) -->
+<section id="menu" class="py-10 bg-gradient-to-br from-gray-50 to-amber-50/30">
+  <div class="max-w-md mx-auto px-4"> <!-- container छोटा किया -->
+    <div class="text-center mb-6">
+      
+        
+        <span class="block text-lg text-amber-600 font-sans font-medium mt-1"><h1><b><i> Menu</i></b></h1></span>
+      
+    </div>
+
+    <!-- Grid container: 2 per row -->
+    <div class="grid grid-cols-2 gap-4">
+      <a href="breads.html" class="category-card">
+        <img src="https://binjalsvegkitchen.com/wp-content/uploads/2014/10/Butter-Garlic-Naan-H1.jpg" alt="Veg Starters">
+        <div class="category-title text-sm">breads</div>
+        <div class="badge text-xs">⭐ Premium</div>
+      </a>
+
+      <a href="chinese.html" class="category-card">
+        <img src="https://assets.zeezest.com/blogs/PROD_Banner_1663162846668.jpg" alt="Non Veg Starters">
+        <div class="category-title text-sm">Chinese</div>
+        <div class="badge text-xs">⭐ Premium</div>
+      </a>
+      
+
+        <a href="chowmein.html" class="category-card">
+          <img src="https://i.ytimg.com/vi/gbygXUDbf2Q/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCCbRvjuTJjSuiR5OSYJuE9AKfsDg" alt="Dosa">
+          <div class="category-title">Chowmein</div>
+          <div class="badge">⭐ Premium</div>
+        </a>
+
+        <a href="fried.html" class="category-card">
+          <img src="https://c.ndtvimg.com/2022-12/l0i0d5b8_indian-snacks_625x300_19_December_22.jpg?im=FaceCrop,algorithm=dnn,width=1200,height=738" alt="Noodles">
+          <div class="category-title">Fried</div>
+          <div class="badge">⭐ Premium</div>
+        </a>
+
+        <a href="gravy.html" class="category-card">
+          <img src="https://spicenest.in/cdn/shop/articles/Master-Gravy-Manufacturers-870x315.jpg?v=1734333639" alt="Momos">
+          <div class="category-title">Gravy</div>
+          <div class="badge">⭐ Premium</div>
+        </a>
+
+        <a href="kathi roll.html" class="category-card">
+          <img src="https://ministryofcurry.com/wp-content/uploads/2019/10/paneer-kathi-rolls-1.jpg" alt="Rolls">
+          <div class="category-title">Kathi Roll</div>
+          <div class="badge">⭐ Premium</div>
+        </a>
+
+        <a href="maggi.html" class="category-card">
+          <img src="https://www.maggi.co.uk/sites/default/files/styles/home_stage_944_531/public/srh_recipes/ecf00e5c370f20e168f182e68c597e58.jpg?h=67eabc4d&itok=hj14wZaS" alt="Non Veg Rolls">
+          <div class="category-title">Maggi</div>
+          <div class="badge">⭐ Premium</div>
+        </a>
+
+        <a href="momos.html" class="category-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQId6YYtgvCoLeGoptxod2uiawr8-SlPcK1qA&s" alt="Soup Bowl">
+          <div class="category-title">Momos</div>
+          <div class="badge">⭐ Premium</div>
+        </a>
+
+        <a href="rice.html" class="category-card">
+          <img src="https://therecipecritic.com/wp-content/uploads/2019/08/easy-fried-rice-4.jpg" alt="Fried Rice">
+          <div class="category-title">Rice</div>
+          <div class="badge">⭐ Premium</div>
+        </a>
+
+        <a href="salaad.html" class="category-card">
+          <img src="https://cdn.apartmenttherapy.info/image/upload/v1708023821/k/archive/718cdc61ace1aaf778fea1e0e82548cac12bc237_32aa25_cropped.jpg" alt="Tandoori Snacks">
+          <div class="category-title">Salad</div>
+          <div class="badge">⭐ Premium</div>
+        </a>
+
+        <a href="tandoori rolls.html" class="category-card">
+          <img src="https://bakewithzoha.com/wp-content/uploads/2024/03/chicken-tikka-paratha-rolls-featured.jpg" alt="Non Veg Tandoori Snacks">
+          <div class="category-title">tandoori Rolls</div>
+          <div class="badge">⭐ Premium</div>
+        </a>
+
+        <a href="tandoori starters.html" class="category-card">
+          <img src="https://cdn.uengage.io/uploads/23764/image-2776-1701085837.jpg" alt="Roti, Naan, Paratha">
+          <div class="category-title">Tandoori Starters</div>
+          <div class="badge">⭐ Premium</div>
+        </a>
+
+       
+
+      </div>
+    </div>
+
+      <!-- बाकी category cards इसी pattern में -->
+    </div>
+  </div>
+</section>
+
+
+<!-- Facilities (Mobile Horizontal Scroll) -->
+<section id="facilities" class="py-10 bg-gradient-to-br from-gray-50 to-amber-50/30">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center mb-8">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-2 font-serif">
+        आपके लिए सुविधाएँ
+        <span class="block text-xl md:text-2xl text-amber-600 font-sans font-medium mt-1">Premium Facilities</span>
+      </h2>
+      <p class="text-base md:text-lg text-gray-600 max-w-3xl mx-auto">
+        We provide exceptional facilities to ensure your dining experience is comfortable and memorable.
+      </p>
+    </div>
+
+    <!-- Horizontal scroll container -->
+    <div class="flex space-x-4 overflow-x-auto pb-4 -mx-6 px-6">
+
+      <!-- BLUW Water (swapped first) -->
+      <div class="flex-none w-40 p-4 rounded-2xl shadow-md flex flex-col items-center text-center bg-white hover:shadow-xl transition-shadow duration-300">
+        <div class="w-12 h-12 rounded-full flex items-center justify-center bg-gradient-to-r from-indigo-400 to-blue-400 text-white text-xl mb-2">💧</div>
+        <h3 class="text-sm font-semibold mb-1">BLUW Water</h3>
+        <p class="text-gray-500 text-xs">Premium packaged drinking water</p>
+      </div>
+
+      <!-- Free Parking -->
+      <div class="flex-none w-40 p-4 rounded-2xl shadow-md flex flex-col items-center text-center bg-white hover:shadow-xl transition-shadow duration-300">
+        <div class="w-12 h-12 rounded-full flex items-center justify-center bg-gradient-to-r from-green-400 to-emerald-400 text-white text-xl mb-2">🚗</div>
+        <h3 class="text-sm font-semibold mb-1">Free Parking</h3>
+        <p class="text-gray-500 text-xs">Convenient parking space available</p>
+      </div>
+
+      <!-- Free Wi-Fi -->
+      <div class="flex-none w-40 p-4 rounded-2xl shadow-md flex flex-col items-center text-center bg-white hover:shadow-xl transition-shadow duration-300">
+        <div class="w-12 h-12 rounded-full flex items-center justify-center bg-gradient-to-r from-purple-400 to-violet-400 text-white text-xl mb-2">📶</div>
+        <h3 class="text-sm font-semibold mb-1">Free Wi-Fi</h3>
+        <p class="text-gray-500 text-xs">Stay connected while you dine</p>
+      </div>
+
+      <!-- Family Friendly -->
+      <div class="flex-none w-40 p-4 rounded-2xl shadow-md flex flex-col items-center text-center bg-white hover:shadow-xl transition-shadow duration-300">
+        <div class="w-12 h-12 rounded-full flex items-center justify-center bg-gradient-to-r from-pink-400 to-rose-400 text-white text-xl mb-2">👨‍👩‍👧‍👦</div>
+        <h3 class="text-sm font-semibold mb-1">Family Friendly</h3>
+        <p class="text-gray-500 text-xs">Perfect atmosphere for families</p>
+      </div>
+
+      <!-- Hygienic Kitchen -->
+      <div class="flex-none w-40 p-4 rounded-2xl shadow-md flex flex-col items-center text-center bg-white hover:shadow-xl transition-shadow duration-300">
+        <div class="w-12 h-12 rounded-full flex items-center justify-center bg-gradient-to-r from-amber-400 to-orange-400 text-white text-xl mb-2">🛡️</div>
+        <h3 class="text-sm font-semibold mb-1">Hygienic Kitchen</h3>
+        <p class="text-gray-500 text-xs">Maintained to highest standards</p>
+      </div>
+
+      <!-- Air Conditioned (swapped position) -->
+      <div class="flex-none w-40 p-4 rounded-2xl shadow-md flex flex-col items-center text-center bg-white hover:shadow-xl transition-shadow duration-300">
+        <div class="w-12 h-12 rounded-full flex items-center justify-center bg-gradient-to-r from-blue-400 to-cyan-400 text-white text-xl mb-2">❄️</div>
+        <h3 class="text-sm font-semibold mb-1">Air Conditioned</h3>
+        <p class="text-gray-500 text-xs">Comfortable dining in all seasons</p>
+      </div>
+
+      <!-- Made with Love -->
+      <div class="flex-none w-40 p-4 rounded-2xl shadow-md flex flex-col items-center text-center bg-white hover:shadow-xl transition-shadow duration-300">
+        <div class="w-12 h-12 rounded-full flex items-center justify-center bg-gradient-to-r from-red-400 to-pink-400 text-white text-xl mb-2">❤️</div>
+        <h3 class="text-sm font-semibold mb-1">Made with Love</h3>
+        <p class="text-gray-500 text-xs">Every dish crafted with care</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- Footer -->
+<!-- ... hero section ... -->
+
+<!-- Menu Categories (Horizontal scroll) -->
+
+
+<!-- Footer (same as your old code, untouched) -->
+<footer id="contact" class="bg-gradient-to-br from-amber-900 to-amber-800 text-white">
+  <div class="max-w-7xl mx-auto px-6 py-16">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+      <!-- Brand -->
+      <div class="text-center md:text-left">
+        <div class="flex items-center gap-3 justify-center md:justify-start mb-4">
+          <div class="w-12 h-12 bg-gradient-to-r from-amber-400 to-amber-500 rounded-xl flex items-center justify-center">
+            <i data-lucide="coffee" class="w-7 h-7 text-white"></i>
+          </div>
+          <h3 class="text-3xl font-bold font-serif">Tandoori Delight</h3>
+        </div>
+        <p class="text-amber-200 leading-relaxed">
+          Experience authentic flavors and premium dining in a warm, family-friendly atmosphere. 
+          Every dish is crafted with love and the finest ingredients.
+        </p>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="text-center md:text-left">
+        <h4 class="text-xl font-bold mb-6 text-amber-100">Contact Information</h4>
+        <div class="space-y-4">
+          <div class="flex items-center gap-3 justify-center md:justify-start">
+            <div class="w-10 h-10 bg-amber-700/50 rounded-lg flex items-center justify-center">
+              <i data-lucide="phone" class="w-5 h-5 text-amber-300"></i>
+            </div>
+            <div>
+              <p class="font-semibold text-amber-100">+91-9582958222</p>
+              <p class="text-sm text-amber-300">Call for reservations</p>
+            </div>
+          </div>
+          <!-- more contact details -->
+        </div>
+      </div>
+
+      <!-- Social Links / Extra -->
+      <div class="text-center md:text-left">
+        <!-- your old footer content untouched -->
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script>
+  // Header hide/show on scroll
+  let lastScroll = 0;
+  const header = document.getElementById('header');
+  window.addEventListener('scroll', () => {
+    const currentScroll = window.pageYOffset;
+    if (currentScroll > lastScroll && currentScroll > 100) {
+      header.style.transform = 'translateY(-120%)';
+    } else {
+      header.style.transform = 'translateY(0)';
+    }
+    lastScroll = currentScroll;
+  });
+
+  // 3-dot menu toggle
+  const moreBtn = document.getElementById('more-btn');
+  const dropdown = document.getElementById('more-dropdown');
+  moreBtn.addEventListener('click', () => {
+    dropdown.classList.toggle('hidden');
+  });
+  window.addEventListener('click', (e) => {
+    if (!moreBtn.contains(e.target) && !dropdown.contains(e.target)) {
+      dropdown.classList.add('hidden');
+    }
+  });
+</script>
+</body>
+</html>

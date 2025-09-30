@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Momos • Premium Menu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --yellow: #ff9b4f;
+      --yellow-deep: #f6a400;
+      --ink: #1c1c1c;
+      --muted: #696969;
+      --bg: #fffaf0;
+      --card: #ffffff;
+    }
+    * { box-sizing: border-box; margin:0; padding:0; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(1200px 600px at 20% -20%, rgba(216, 214, 208, 0.6), transparent 60%),
+        radial-gradient(800px 400px at 120% 10%, rgba(255,213,79,0.35), transparent 40%),
+        var(--bg);
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+    header {
+      background: linear-gradient(135deg, #fff3bf, var(--yellow));
+      padding: 18px 22px;
+      border-radius: 24px;
+      box-shadow: 0 12px 30px rgba(246,185,0,0.25);
+      text-align: center;
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 32px;
+      margin: 0;
+    }
+    .menu-grid {
+      margin-top: 24px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .dish {
+      background: var(--card);
+      border: 1px solid rgba(0,0,0,0.08);
+      border-radius: 16px;
+      padding: 14px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+    .dish:hover {
+      transform: translateY(-4px);
+    }
+    .dish img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 12px;
+    }
+    .dish-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+    .price-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--yellow-deep);
+    }
+    footer {
+      margin-top: 32px;
+      text-align: center;
+      font-size: 13px;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+  <header><h1>Kathi Roll</h1></header>
+  <div class="menu-grid">
+
+  <!-- Veg Rolls -->
+  <div class="dish">
+    <img src="https://orders.popskitchen.in/storage/2024/09/image-318.png" alt="Veg Chaap Roll">
+    <div class="dish-title">Veg Chaap Roll</div>
+    <div class="price-row">₹70 /-</div>
+  </div>
+
+  <div class="dish">
+    <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2024/02/paneer-kathi-roll-recipe.jpg" alt="Veg Paneer Roll">
+    <div class="dish-title">Veg Paneer Roll</div>
+    <div class="price-row">₹90 /-</div>
+  </div>
+
+  <div class="dish">
+    <img src="https://www.nutralite.com/wp-content/uploads/2024/02/Paneer-Egg-Bhurji-Wrap.png.webp" alt="Veg Paneer Bhurji Roll">
+    <div class="dish-title">Veg Paneer Bhurji Roll</div>
+    <div class="price-row">₹90 /-</div>
+  </div>
+
+  <!-- Egg Rolls -->
+  <div class="dish">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgrHEvkx35UDqhQx8WRrFt6H0Lt8k2FiC8LA&s" alt="Single Egg Roll">
+    <div class="dish-title">Single Egg Roll</div>
+    <div class="price-row">₹50 /-</div>
+  </div>
+
+  <div class="dish">
+    <img src="https://gully2gully.in/wp-content/uploads/2021/12/egg-roll.jpg" alt="Double Egg Roll">
+    <div class="dish-title">Double Egg Roll</div>
+    <div class="price-row">₹60 /-</div>
+  </div>
+
+  <div class="dish">
+    <img src="https://orders.popskitchen.in/chinese/storage/sites/6/2024/09/image-298.png" alt="Double Egg Special Roll">
+    <div class="dish-title">Double Egg Special Roll</div>
+    <div class="price-row">₹70 /-</div>
+  </div>
+
+  <!-- Chicken Rolls -->
+  <div class="dish">
+    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj1w6geFm9tXUcLSuLEHXsewFG5fizlfq_8Yafz2PCXjzlyLodqsc52e6L068h-53aQBvH4E1S_NIB8lsCoRdRWHU1YtqC_y5ngF9Vmp0Yx9dxHKwG52Rryjgdsz7YqegcoC0NbS91buB0/s2000/IMG_20210404_223034_compress1.jpg" alt="Chicken Roll">
+    <div class="dish-title">Chicken Roll</div>
+    <div class="price-row">₹90 /-</div>
+  </div>
+
+  <div class="dish">
+    <img src="https://fuddins.com/wp-content/uploads/2023/03/60f2ea67b471327a1d82959b_chicken-roll_1500-x-1200.jpg" alt="Single Egg Chicken Roll">
+    <div class="dish-title">Single Egg Chicken Roll</div>
+    <div class="price-row">₹110 /-</div>
+  </div>
+
+  <div class="dish">
+    <img src="https://gully2gully.in/wp-content/uploads/2021/12/egg-roll.jpg" alt="Double Egg Chicken Roll">
+    <div class="dish-title">Double Egg Chicken Roll</div>
+    <div class="price-row">₹120 /-</div>
+  </div>
+
+  <div class="dish">
+    <img src="https://media-assets.swiggy.com/swiggy/image/upload/f_auto,q_auto,fl_lossy/dhqdzzzhilvy0ia1wyz4" alt="Single Egg Double Chicken Roll">
+    <div class="dish-title">Single Egg Double Chicken Roll</div>
+    <div class="price-row">₹160 /-</div>
+  </div>
+
+  <div class="dish">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ9oiXdapmMMNvMEQ_xijB9fE0lHKy40OV9A&s" alt="Double Egg Double Chicken Roll">
+    <div class="dish-title">Double Egg Double Chicken Roll</div>
+    <div class="price-row">₹170 /-</div>
+  </div>
+
+  <!-- Other Veg Rolls -->
+  <div class="dish">
+    <img src="https://manjulaskitchen.com/wp-content/uploads/vegetable_kathi_roll.jpg" alt="Veg Roll">
+    <div class="dish-title">Veg Roll</div>
+    <div class="price-row">₹50 /-</div>
+  </div>
+
+  <div class="dish">
+    <img src="https://i.ytimg.com/vi/8vfTcJZ7E3Y/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDhc6H64vjSUl4xx6Xx33tghGEO8w" alt="Mix Veg Roll">
+    <div class="dish-title">Mix Veg Roll</div>
+    <div class="price-row">₹70 /-</div>
+  </div>
+
+</div>
+
+
+  </div>
+</div>
+
+<footer>© <span id="year"></span> Premium Menu</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

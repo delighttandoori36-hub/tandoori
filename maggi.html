@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Momos • Premium Menu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --yellow: #ff9b4f;
+      --yellow-deep: #f6a400;
+      --ink: #1c1c1c;
+      --muted: #696969;
+      --bg: #fffaf0;
+      --card: #ffffff;
+    }
+    * { box-sizing: border-box; margin:0; padding:0; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(1200px 600px at 20% -20%, rgba(216, 214, 208, 0.6), transparent 60%),
+        radial-gradient(800px 400px at 120% 10%, rgba(255,213,79,0.35), transparent 40%),
+        var(--bg);
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+    header {
+      background: linear-gradient(135deg, #fff3bf, var(--yellow));
+      padding: 18px 22px;
+      border-radius: 24px;
+      box-shadow: 0 12px 30px rgba(246,185,0,0.25);
+      text-align: center;
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 32px;
+      margin: 0;
+    }
+    .menu-grid {
+      margin-top: 24px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .dish {
+      background: var(--card);
+      border: 1px solid rgba(0,0,0,0.08);
+      border-radius: 16px;
+      padding: 14px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+    .dish:hover {
+      transform: translateY(-4px);
+    }
+    .dish img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 12px;
+    }
+    .dish-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+    .price-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--yellow-deep);
+    }
+    footer {
+      margin-top: 32px;
+      text-align: center;
+      font-size: 13px;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+  <header><h1>Maggi</h1></header>
+  <div class="menu-grid">
+
+  <div class="dish">
+    <img src="https://mrcrisspi.orderz.in/uploads/restorants/644add09-a185-42d3-bdf4-410c6d7e61fb_large.jpg" alt="Plain Maggi">
+    <div class="dish-title">Plain Maggi</div>
+    <div class="price-row">₹50 /-</div>
+  </div>
+
+  <div class="dish">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmIGk9yGtUbv6sd6Zz7AmO9aeA37tvLpOdCw&s" alt="Masala Maggi">
+    <div class="dish-title">Masala Maggi</div>
+    <div class="price-row">₹70 /-</div>
+  </div>
+
+  <div class="dish">
+    <img src="https://www.wholygoodness.com/wp-content/uploads/2024/11/Vegetable-Masala-Maggi-Noodles-Recipe-500x500.jpg" alt="Vegetable Maggi">
+    <div class="dish-title">Vegetable Maggi</div>
+    <div class="price-row">₹100 /-</div>
+  </div>
+
+  <div class="dish">
+    <img src="https://www.whiskaffair.com/wp-content/uploads/2022/09/Chicken-Maggi-2-3.jpg" alt="Chicken Maggi">
+    <div class="dish-title">Chicken Maggi</div>
+    <div class="price-row">₹170 /-</div>
+  </div>
+
+  <div class="dish">
+    <img src="https://i.ytimg.com/vi/UcO2AmQgqeM/maxresdefault.jpg" alt="Paneer Maggi">
+    <div class="dish-title">Paneer Maggi</div>
+    <div class="price-row">₹150 /-</div>
+  </div>
+
+</div>
+
+</div>
+
+
+
+  </div>
+</div>
+
+<footer>© <span id="year"></span> Premium Menu</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
